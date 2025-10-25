@@ -19,5 +19,11 @@ public class MultidimesionalArray {
             }
             System.out.println();
         }
+        for(int n[] : nums){ //n is no of arrays m is element of arrays
+          for(int m : n){
+            System.out.print(m+" ");
+          }
+          System.out.println();
+        }
     }
 }
