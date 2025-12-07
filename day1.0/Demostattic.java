@@ -6,11 +6,14 @@ String brand;
  public void show(){
     System.out.println(brand + ":" + name + ":" + price+":");
  }
+ public static void show1(){
+    System.out.println(name);//i can call names using static variable constructor but i cannot call anything apart from that because brand and price is not static while string is so i can call name in static constructor block
+ }
 }
 
 
 public class Demostattic {
-    public static void main(String[] args) {
+    public static void main(String[] args){//thats why im using static main so i can call main class without creating the object 
         mobile obj1 = new mobile();
         mobile obj2 = new mobile();
         mobile obj3 = new mobile();
@@ -32,6 +35,8 @@ public class Demostattic {
         obj1.show();
         obj2.show();
         obj3.show();
+        obj1.show1();//here im using object to call show1 but thats not a proper method i can use 
+        mobile.show1();
         
     }
     
